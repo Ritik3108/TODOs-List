@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+        crossorigin="anonymous">
+
+        <script src="app.js"></script>
+    <title>TODO List</title>
+</head>
+<body>
+<header class="bg-success text-white p-4">
+   <div class="container">
+   <div class="row">
+   <div class="col-lg-12 col-md-12 col-sm-12 ">
+   <h1>TO-DO List</h1>
+  </div>
+</div>
+</div>
+
+   </header>
+   <div class="container mt-4">
+   <h2>Add Items</h2>
+
+   <label id="lblSuccess" class="text-success " style="display: none;"></label>
+
+   <form id ="addForm">
+     <div class = "row">
+       <div class="col-lg-7 col-md-7 col-sm-7"><input type="text" onkeyup="toggleButton(this,'b1')" class="form-control" id="tf"></div>
+       <div class="col-lg-5 col-md-5 col-sm-5"><input type="submit" class="btn btn-dark" id="b1" value="submit" disabled></div>
+
+     </div>
+
+   </form>
+
+   <h2 class="mt-4">Tasks</h2>
+
+   <form>
+     <ul class="list-group" id="result"></ul>
+
+   </form>
+
+  </div>
+   
+</header>
+</body>
+</html>
